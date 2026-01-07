@@ -1,0 +1,10 @@
+# Các file thực thi (Application)
+*.exe
+
+# Các file tạm của Dev-c++ hoặc các IDE khác
+*.layout
+*.win
+*.o
+
+# Các file log
+*.log
