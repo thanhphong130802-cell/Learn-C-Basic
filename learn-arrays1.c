@@ -25,7 +25,21 @@ int main(){
 		if (max < ar[i]) {
 			max = ar[i];
 		}
-	}	
+	}
 		printf("\nMax: %d", max);
+		int i, j, temp;
+	for (i = 0; i < a - 1; i++){
+		for (j = 0;j < a - i - 1; j++){
+			if ( ar[j] > ar[j+1]){
+				temp = ar[j];
+				ar[j] = ar[j+1];
+				ar[j+1] = temp;
+			}
+		}
+	}
+	printf("Mang sau khi sap xep tang dan: \n");
+	for(i = 0; i < a; i++){
+		printf("%d\t", ar[i]);
+	}
 	return 0;
 }
