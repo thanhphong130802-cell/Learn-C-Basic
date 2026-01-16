@@ -37,9 +37,24 @@ int main(){
 			}
 		}
 	}
-	printf("Mang sau khi sap xep tang dan: \n");
+	printf("\nMang sau khi sap xep tang dan: ");
 	for(i = 0; i < a; i++){
 		printf("%d\t", ar[i]);
 	}
+	printf("\nCac so nguyen to trong mang la: ");
+	for (int i = 0; i < a;i++){
+		if (ar[i] < 2) continue;
+		int isPrime = 1;
+		for(int j = 2; j * j <= ar[i]; j++){
+			if (ar[i] % j ==0){
+				isPrime = 0;
+				break;
+			}
+		}
+		if (isPrime == 1){
+			printf("%d\t", ar[i]);
+		}
+	}
+	
 	return 0;
 }
