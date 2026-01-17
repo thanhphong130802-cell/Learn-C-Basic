@@ -18,8 +18,10 @@ int main(){
 		sum += ar[i];
 	}
 	printf("%d", sum);
-	float Tb = (float)sum/a;
+	if (a > 0){
+	float Tb = (float)sum/a;	
 	printf("\nTb: %.2f", Tb);
+	                                                                                                                 }
 	int max = ar[0];
 	for (int i = 0; i < a; i++){
 		if (max < ar[i]) {
@@ -27,18 +29,17 @@ int main(){
 		}
 	}
 		printf("\nMax: %d", max);
-		int i, j, temp;
-	for (i = 0; i < a - 1; i++){
-		for (j = 0;j < a - i - 1; j++){
+	for (int i = 0; i < a - 1; i++){
+		for (int j = 0;j < a - i - 1; j++){
 			if ( ar[j] > ar[j+1]){
-				temp = ar[j];
+				int temp = ar[j];
 				ar[j] = ar[j+1];
 				ar[j+1] = temp;
 			}
 		}
 	}
 	printf("\nMang sau khi sap xep tang dan: ");
-	for(i = 0; i < a; i++){
+	for(int i = 0; i < a; i++){
 		printf("%d\t", ar[i]);
 	}
 	printf("\nCac so nguyen to trong mang la: ");
