@@ -42,4 +42,4 @@ main(){
 			if(i==j)
 				tong+=arr[i][j];
 	printf("\n Tong gia tri tren duong cheo chinh:%d",tong);
-}
+}int a;
