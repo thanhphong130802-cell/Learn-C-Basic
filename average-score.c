@@ -9,4 +9,4 @@ int main() {
 	scanf("%d", &c);
 	float as =(float) (m + p + c)/3.0;
 	printf("Average score = %.3f", as);
-}
+}int a;
