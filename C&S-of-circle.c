@@ -8,4 +8,5 @@ int main(){
 	float s = r*r*3.14159;
 	printf("S =%.5f\n =", s);
 	return 0;
+	int a;
 }
