@@ -8,5 +8,5 @@ int main(){
 	}else {
 		printf("%d la so le", n);
 	}return 0;
-	int a;
+	int a,b;
 }
